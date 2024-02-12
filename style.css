@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: #f4f4f4
+}
+
+body {
+  width: max-content;
+}
+
+.logo {
+  display: inline;
+  vertical-align: middle;
+  padding: .3rem .3rem;
+  font-size: 2.0rem;
+}
+
+div.logo img {
+  vertical-align: middle;
+  padding: 0rem .1rem;
+  width: 25px;
+}
+
+div.logo b {
+  vertical-align: middle;
+  padding: 0rem .1rem;
+}
+
+#table-scroll {
+  height: 150px;
+  overflow: scroll;
+  overflow-x: hidden;
+  margin-top: 20px;
+}
+
+#table-scroll table thead th {
+  position: absolute;
+  top: 31px;
+}
+
+#history_table table {
+  place-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+td,
+th {
+  font-size: 1.1rem;
+  padding: .6rem .4rem;
+  vertical-align: middle;
+}
+
+:root {
+  --bg-color: #ffffff;
+  --bg-secondary-color: #f3f3f6;
+  --color-primary: #14854F;
+  --color-lightGrey: #d2d6dd;
+  --color-grey: #747681;
+  --color-darkGrey: #3f4144;
+  --color-error: #d43939;
+  --color-success: #28bd14;
+  --grid-maxWidth: 120rem;
+  --grid-gutter: 2rem;
+  --font-size: 1.1rem;
+  --font-color: #333333;
+  --font-family-sans: sans-serif;
+  --font-family-mono: monaco, "Consolas", "Lucida Console", monospace;
+}
+
+a.wordimg {
+  position: relative;
+}
+
+a.wordimg img {
+  position: fixed;
+  height: 20px;
+  width: 100px;
+  max-width: fit-content;
+  opacity: 0;
+  left: 153px;
+  top: 32px;
+  transition: opacity .5s, left .5s;
+}
+
+a.wordimg:hover img {
+  opacity: 1;
+  left: 53px;
+  background: rgb(0, 0, 0);
+}
